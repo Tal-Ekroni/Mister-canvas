@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>mister-canvas</title>
+</head>
+
+<body onload="onInit()">
+    <nav>
+        <div class="edit-btns">
+            <input type="color" onchange="onSetColor(this.value)" id="head" class="b-color" name="head" value="#e66465">
+            <input onchange="onSetCanvasColor(this.value)" class="bg-color" type="color" value="#FFF9F1">
+            <input onchange="onSetBrushSize(this.value)" class="brush" type="range" min="1" max="20" value="1">
+            <select id="shapes" onchange="onSetShape(this.value)">
+                <option value="line">line</option>
+                <option value="circle">circle</option>
+                <option value="rect">rect</option>
+                <option value="triangle">triangle</option>
+            </select>
+            <button class="clear" onclick="onClear()">
+                clear
+            </button>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="canvas-container">
+            <canvas id="my-canvas" width="900" height="500" style="outline:1px solid rgb(0, 0, 0)"></canvas>
+        </div>
+
+    </main>
+
+
+
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>

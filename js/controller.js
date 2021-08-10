@@ -118,6 +118,9 @@ function drawLine() {
     gPrevPos.x = gCurrPos.x;
     gPrevPos.y = gCurrPos.y;
 }
+// function drawTriangle(){
+    
+// }
 function onSetShape(shape) {
     setShape(shape)
 }

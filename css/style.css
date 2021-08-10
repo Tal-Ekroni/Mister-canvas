@@ -12,14 +12,7 @@ body {
     background-color: rgb(255, 249, 241);
 }
 
-.edit-btns {
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    margin: 0;
-    padding: 0;
-    gap: 10px
-}
+
 
 .canvas-container {
     display: flex;
@@ -27,5 +20,14 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     padding: 0;
+}
+
+
+
+.edit{
+    display: flex;
+    justify-content: center;
+gap: 10px;
+margin: 0 auto;
 }
 
